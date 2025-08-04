@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechCorp - Transformando ideias em soluções digitais inovadoras. Especialistas em desenvolvimento web, mobile e soluções em nuvem.">
+    <meta name="keywords" content="desenvolvimento web, aplicativos mobile, soluções em nuvem, tecnologia, React, JavaScript">
+    <meta name="author" content="TechCorp">
+    <title>Vitória Gabriele</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techcorp.com.br/">
+    <meta property="og:title" content="TechCorp - Soluções Digitais Inovadoras">
+    <meta property="og:description" content="Transformando ideias em soluções digitais inovadoras. Especialistas em desenvolvimento web, mobile e soluções em nuvem.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://techcorp.com.br/">
+    <meta property="twitter:title" content="TechCorp - Soluções Digitais Inovadoras">
+    <meta property="twitter:description" content="Transformando ideias em soluções digitais inovadoras. Especialistas em desenvolvimento web, mobile e soluções em nuvem.">
+</head>
+<body class="antialiased">
+    <div id="root"></div>
+    
+    <!-- Script para detectar tema do sistema -->
+    <script>
+        // Detecta preferência de tema do sistema
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</body>
+</html>
